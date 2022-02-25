@@ -1,0 +1,47 @@
+/* h1 and p are element selectors, they match the name of an HTML element */
+h1 {
+  color: #005f73;
+}
+
+p {
+  color: #bb3e03;
+}
+
+li {
+  list-style-type: square;
+}
+
+/* We can also use class selectors to target elements */
+.item-two {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Selects ANY section that is inside a main */
+main section {
+  background-color: #f8edeb;
+}
+
+/* Selects ANY h2 that is inside a section that is right after a section */
+section + section h2 {
+  color: #00b4d8;
+}
+
+/* The order matters here: link, visited, hover, active
+(according to the w3schools docs). In practice, putting a:visited
+at the end of the queue worked fine */
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  background-color: yellow;
+}
+
+a:active {
+  background-color: aqua;
+}
